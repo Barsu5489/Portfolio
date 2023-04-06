@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background-color:  #f9f8f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  background-color:  #f9f8f8;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-logo a {
+  font-weight: bold;
+  font-size: 34px;
+  text-decoration: none;
+  color: rgb(0, 13, 7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: large;
+}
+.name-skill-container{
+  height: 30vh;
+
+}
+
+.my-image{
+  height: 250px;
+  width: 250px;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.name-skill-container{
+  display: flex;
+  justify-content: space-around;
+}
+.speciality{
+ 
+  height: 20vh;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-left: 9.2%;
+}
+.skills, .my-name{
+margin-top: 30px;
+}
+.my-name{
+  font-size: 40px;
+}
+.skills p{
+  font-size: 20px;
+  margin-top: 30px;
+}
+.project-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.project-page__title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.project__title-span{
+  margin-left: 40%;
+}
+.project {
+  
+  border-radius: 8px;
+  border: 2px solid rgb(123, 127, 131);
+  padding: 40px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.project:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  transition: 0.1s;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+
+.project img{
+height: 15vh;
+margin-bottom: 20px;
+
+}
+.project-image-description{
+  display: flex;
+
+}
+.project__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.project__title-span{
+  margin-left: 40%;
+}
+.project__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+
+.project__date {
+  font-size: 16px;
+  margin: 0;
+  color: #666666;
+}
+
+.project__description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.project__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__skills {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.project__skill {
+  background-color: #f3e7e7;
+  color: #333333;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
 }
